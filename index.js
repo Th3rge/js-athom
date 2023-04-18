@@ -30,6 +30,8 @@ const subDate = () => {
   hourDifference > 1
     ? alert(`Você se manteve ${hourDifference} horas desconectado`)
     : 'Desconectado há menos de 1 hora';
+  
+    return hourDifference
 };
 
 //Verifica se o valor da mensagem é true ou false
