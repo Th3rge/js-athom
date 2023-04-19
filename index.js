@@ -21,7 +21,7 @@ const subDate = () => {
   const oldDate = new Date('2023-04-14'); // Data último login
 
   //pegando o tempo em milisegundos
-  MilisecondsDifference = currentDate - oldDate;
+  const MilisecondsDifference = currentDate - oldDate;
 
   //transformando milisegundos em horas
   const hourDifference = Math.floor(MilisecondsDifference / (1000 * 60 * 60));
@@ -69,7 +69,7 @@ if (msg.value === true) {
 
   //adiciona o timestamp se register for FALSE
   if (newObj.register === false) {
-    newMsg = {
+    const newMsg = {
       ...newObj,
       mac: Date(),
     };
